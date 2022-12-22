@@ -7,12 +7,12 @@
 ## 语法
 
 ```Haskell
-DATETIME weeks_sub(DATETIME expr1, INT expr2)
+DATETIME weeks_sub(DATETIME|DATE expr1, INT expr2)
 ```
 
 ## 参数说明
 
-`expr1`: 原始的日期，数据类型为 `DATETIME`。
+`expr1`: 原始的日期，支持的数据类型为 DATETIME 或 DATE。如果输入值为 DATE，会隐式转换为 DATETIME。
 
 `expr2`: 要减去的周数，数据类型为 `INT`。
 
